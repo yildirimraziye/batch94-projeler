@@ -1,0 +1,18 @@
+body{
+font-family:'Times New Roman', Times, serif;
+
+}
+nav.menu{
+    text-align: center;
+    background-color: rgb(180, 176, 176) ;
+    width: 150px;
+}
+.active{
+background-color: black;
+}
+a.link{
+    color:white
+}
+a{
+    text-decoration: none;
+}

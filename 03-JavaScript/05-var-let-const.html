@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+     var x =5;
+     var x= 6;
+     console.log(x); // 6 yazdı
+     
+     var x= 4;
+     x=8;
+     console.log(x); // 8 yazdı
+     // var da x i çok kez kullanmaya müsaade etti ama 
+     let y= 5 ;
+     let z= 6 ;
+     // let de  2 kere y kulanamadık. so wie apex .
+     console.log(y);
+
+     var x = 5;
+     var k ; //undifined çıktı verdi
+     const d = 2;
+     //aralarına , koyarak toplu yazdırabiliriz.
+     console.log(x,k,d); //5, undifined, 2 çıktı verdi.
+
+    let enBuyukTamSayi = Number.MAX_SAFE_INTEGER;
+    console.log(enBuyukTamSayi);
+
+    console.log(enBuyukTamSayi+5==enBuyukTamSayi+6);
+    //hatalı olarak true verdi 
+    //max sayıdan daha büyük sayı ile işlem yaptığımız için hatalı sonuç veriyor
+    // bu sayıdan daha büyük sayı ile işlem yapacaksan sayının sonuna n eklemeliyiz.alttaki gibi
+    //topladığımız sayıların yanına da  eklemeliyiz ki aynı türden olsunlar.
+
+    var testTamsayi = 12616323627373436453759457456n;
+        console.log(testTamsayi+5n==testTamsayi+6n);
+
+    let s = 12;
+    console.log(s);
+    console.log(typeof(s));
+    </script>
+</body>
+</html>

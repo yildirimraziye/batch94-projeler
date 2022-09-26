@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+     <table>
+        <tr>
+            <td>
+             <label for="isim">İsim</label>
+            </td>
+            <td> 
+                <input type="text" name="isim" id="isim">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="dogum">Dogum Tarihi</label>
+            </td>
+            <td>
+                <input type="date" name="dogum" id="dogum" minlength="3">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="eposta"></label>
+            </td>
+            <td>
+                <input type="email" name="epost" id="eposta" required maxlength="30">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="sifre">Sifre</label>
+            </td>
+            <td>
+                <input type="password" name="sifre" id="sifre" required>
+            </td>
+        </tr>
+        <tr>
+            <td></td><!-- bos gecelim senaryo gecegi bos kalması lazım -->
+            <td>
+                <input type="submit" value="Kaydet">
+                <!-- required yapmak için input ların sonuna required yazıyoruz. -->
+            </td>
+        </tr>
+     </table>
+
+    </form>
+</body>
+</html>

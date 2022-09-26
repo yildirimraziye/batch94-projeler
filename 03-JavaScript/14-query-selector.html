@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li class = "kutu "id="kutu1">Anasayfa</li>
+            <li class="kutu">Hakkimizda</li>
+            <li class="kutu">İletişim</li><!-- tüm li lere aynı class ismini verdik -->
+        </ul>
+    </nav>
+
+    <script>
+     let menu1 = document.querySelector(".menu");//class ismi menu olan elementi seçtik
+    console.log(menu1);
+
+    let sec = document.querySelector("#kutu1");//ıd si kutu1 olan li yi saçtik
+     console.log(sec.innerText); // sec.innerText dersek li nin tamamıdeğil de sadece Anasayfa seçilir
+
+    //seçtiğimiz li nin içeriğini değiştirelim.
+    sec.innerText = "Merhaba Dünya" //anasayfayı Merhaba Dünya yaptık
+
+    sec.innerText="<b> Merhaba Dünya </b>" //Çalışmaz. innerText HTML tag larını algılamaz
+    sec.innerHTML="<b> Merhaba Dünya </b>" // Çalışır.innerHTML HTML taglarını algılar
+
+     let hepsi = document.querySelectorAll(".kutu");
+     console.log(hepsi);
+
+
+    </script>
+</body>
+</html>

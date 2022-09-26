@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let s2 = "kus";
+        let s3 = "kedi";
+        console.log(s2 || s3); //kus
+        console.log(s2 && s3);//false u aradı bulamayınca sonuncuyu aldı
+        console.log("" || 0 || "asd" || undefined ) ; // || lar icinde hangi düzgün ver varsa onu yazar
+        console.log(12 && 0 && "bc" && undefined);
+
+        //aradığı şeyi bulamazlarsa ikiside en sondaki değeri alırlar
+
+        //veya true yu arar ve false u arar
+
+        // işlmde hem && hem || vrsa önclik && nindir.
+        //carpma toplma gibi düünürsek çarpma öncelik gib oluyor
+        // || ile && arasında işlem önceliği vardır && önce yapılır. çarpma ile toplama arasınd da işlem önceliği vardır. & çarpma gibi olduğu için de mantklı
+    </script>
+</body>
+</html>
